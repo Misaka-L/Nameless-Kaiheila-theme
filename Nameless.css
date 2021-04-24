@@ -74,11 +74,11 @@ body{
 }
 
 /* -- 用户卡片 -- */
-.user-info-card.user-playing-game{
+.user-playing-game{
     border: none !important; /* 清除用户正在玩游戏时的边框 */
 }
 
-.user-info-card.user-playing-music{
+.user-playing-music{
     border: none !important; /* 清除用户正在听音乐的边框 */
 }
 
@@ -120,26 +120,24 @@ body{
     opacity: 0;
 }
 
-.guide-page .grid-item:hover .guild-card-item{ /* 让卡片上移的更明显 */
+.guild-card-item:hover{ /* 让卡片上移的更明显 */
     margin-top: -15px !important;
 }
 
-.guide-page .grid-item .guild-card-item{ /* 添加卡片上移动画 */
+.guild-card-item{ /* 添加卡片上移动画 */
     transition-property: margin;
     transition-duration: 0.1s;
     transition-timing-function: ease-in-out;
     backdrop-filter: blur(1rem);
 }
 
+.discover-input-wrapper{ /* 给搜索框加个背景模糊 */
+    backdrop-filter: blur(1rem);
+}
+
 /* -- Emoji 面板 -- */
 .emoji-panel{
     backdrop-filter: blur(1rem); /* 添加面板背景模糊 */
-}
-
-/* -- 卡片消息 -- */
-.kui-card{
-    background: var(--background-primary) !important; /* 重设卡片信息背景颜色 */
-    backdrop-filter: blur(1rem); /* 添加背景模糊, 然鹅不知道为什么不能用 */
 }
 
 /* -- 置顶消息 -- */
@@ -194,6 +192,22 @@ body{
     backdrop-filter: blur(1rem);
 }
 
+/* -- 卡片消息 -- */
+.bili-video-preview{ /* BiliBili 视频卡片背景 */
+    background-color: var(--background-primary) !important;
+    backdrop-filter: blur(1rem);
+}
+
+.kui-card{
+    background: var(--background-primary) !important; /* 重设卡片信息背景颜色 */
+    backdrop-filter: blur(1rem); /* 添加背景模糊, 然鹅不知道为什么不能用 */
+}
+
+.url-parse-website{ /* 网址解析卡片背景 */
+    background-color: var(--background-primary) !important;
+    backdrop-filter: blur(1rem);
+}
+
 /* -- 通用 -- */
 .theme-textarea{ /* 重设文本域背景 */
     background-color: var(--background-primary) !important;
@@ -214,6 +228,20 @@ body{
 .theme-selector-option-bg{ /* 下拉菜单列表 */
     backdrop-filter: blur(1rem);
     background-color: var(--background-primary);
+}
+
+.slider-wrapper{ /* 滑块背景模糊 */
+    backdrop-filter: blur(1rem);
+}
+
+.menu-icon-item.active .icon-button{ /* 服务器列表选中 */
+    border: 10px solid rgba(221, 221, 221, 0.1);
+    background-color: rgba(221, 221, 221, 0.1) !important;
+}
+
+.preview-image-mask{
+    backdrop-filter: blur(1rem);
+    background-color: var(--background-primary) !important;
 }
 
 /* 新消息 */
