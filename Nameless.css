@@ -175,5 +175,5 @@ body{
 }
 
 .header-right{
-    background: transparent; /* 去除频道右上角按钮诡异的黑色方块 */
+    background: transparent !important; /* 去除频道右上角按钮诡异的黑色方块 */
 }
