@@ -200,7 +200,7 @@ body{
 }
 
 .top-menu{ /* 菜单背景模糊 */
-    backdrop-filter: blur(1rem) !important;
+    backdrop-filter: blur(8rem) !important;
 }
 
 .user-setting-menu{
@@ -209,6 +209,11 @@ body{
 
 .header-right{
     background: transparent !important; /* 去除频道右上角按钮诡异的黑色方块 */
+}
+
+.theme-selector-option-bg{ /* 下拉菜单列表 */
+    backdrop-filter: blur(1rem);
+    background-color: var(--background-primary);
 }
 
 /* 新消息 */
