@@ -69,13 +69,26 @@ body{
     backdrop-filter: blur(1rem); /* 给弹窗添加模糊背景 */
 }
 
-/* -- 用户卡片 -- */
-.user-info-card.user-playing-game{
-    border: none; /* 清除用户正在玩游戏时的边框 */
+.feedback-dialog{
+    backdrop-filter: blur(1rem); /* 帮助弹窗 */
 }
 
-.user-info-card .card-head .user-avator{
-    border: none; /* 清除用户头像的边框 */
+/* -- 用户卡片 -- */
+.user-info-card.user-playing-game{
+    border: none !important; /* 清除用户正在玩游戏时的边框 */
+}
+
+.user-info-card.user-playing-music{
+    border: none !important; /* 清除用户正在听音乐的边框 */
+}
+
+.user-avator{
+    border: none !important; /* 清除用户头像的边框 */
+}
+
+.card-head{
+    border: none !important; /* 清除用户头像的边框 */
+    padding: 0 i !important;
 }
 
 .user-info-card{
@@ -145,7 +158,7 @@ body{
     backdrop-filter: blur(1rem) !important;
 }
 
-/* 设置界面 */
+/* -- 设置界面 -- */
 .setting-mask{ /* 设置界面的背景模糊 */
     backdrop-filter: blur(0.3rem) !important;
 }
@@ -158,6 +171,26 @@ body{
 
 .__react_component_tooltip.type-info.place-top:after{ /* 为提示框下面的倒三角 ▼ 改变背景颜色，添加模糊 */
     border-top-color: var(--background-primary) !important;
+    backdrop-filter: blur(1rem);
+}
+
+/* -- 加载页面 -- */
+.connect-logo{
+    height: 0 !important; /* 清除 logo */
+}
+
+/* -- 历史消息 / 有新消息提示 -- */
+.scroll-bottom-tips{ /* 调整 "你正在查看历史消息"，使其成为单独一个气泡 */
+    margin-bottom: 10px !important;
+    background-color: rgba(102, 102, 204, 0.8) !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(1rem);
+}
+
+.unread-tips{ /* 调整 "有新消息"，使其成为单独一个气泡 */
+    margin-top: 10px !important;
+    background-color: rgba(102, 102, 204, 0.8) !important;
+    border-radius: 8px !important;
     backdrop-filter: blur(1rem);
 }
 
@@ -176,4 +209,10 @@ body{
 
 .header-right{
     background: transparent !important; /* 去除频道右上角按钮诡异的黑色方块 */
+}
+
+/* 新消息 */
+.left-timer{
+    background: transparent !important; /* 清除诡异的背景 */
+    top: -12px !important; /* 移动到分割线上面 */
 }
