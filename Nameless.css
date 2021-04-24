@@ -1,0 +1,175 @@
+/* -- 无名氏 Nameless kaiheila theme By Misaka-L -- */
+/* Github: https://github.com/Misaka-L/Nameless-Kaiheila-theme */
+
+/* -- 主题相关 -- */
+*{
+    --background-url: url("http://pixiv.cat/89358421.png");
+    /*
+    图片来自 Pixiv: https://www.pixiv.net/artworks/89358421
+    插画: 星空をキャンバスに変えて 作者: ドトノ
+    插画版权归原作者所有，主题作者对于使用该插画造成的侵权行为不负任何责任
+
+    Image from Pixiv: https://www.pixiv.net/artworks/89358421
+    Illustration: 星空をキャンバスに変えて Creator: ドトノ
+    The copyright of the illustration belongs to the original author. The theme author is not responsible for any infringement caused by the use of the illustration.
+    */
+}
+
+/* -- 重置黑暗主题设置 -- */
+.theme-dark{
+    --win-background: transparent !important;
+    --win-title-bar: transparent !important;
+    --left-nav-background: transparent !important;
+    --background-primary: rgba(0, 0, 0, 0.5) !important;
+    --mention-message-bg: transparent !important;
+    --menu-background: var(--background-primary) !important;
+    --menu-head: var(--background-primary) !important;
+    --box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5) !important;
+    --box-shadow-sm: 0px 1px 6px -2px rgba(0, 0, 0, 0.5) !important;
+    --box-shadow-lg: 0px 4px 12px -1px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* -- 背景图片 --  */
+body{
+    background-image: var(--background-url) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 清除聊天界面背景颜色以显示背景图片 */
+.room-layout{
+    background: transparent !important;
+}
+
+.room-header{
+    background: transparent !important;
+}
+
+.room-content-left{
+    background: transparent !important;
+}
+
+.room-content-right{
+    background: transparent !important;
+}
+
+/* -- 连接中界面 -- */
+.connect-center-layout{
+    background-color: transparent !important; /* 清除连接中界面背景 */
+}
+
+/* -- 消息编辑框 -- */
+.theme-send-ctrl-bg{
+    background: var(--background-primary) !important; /* 重设编辑框背景颜色 */
+}
+
+/* -- 弹窗背景 -- */
+.modal-body{
+    backdrop-filter: blur(1rem); /* 给弹窗添加模糊背景 */
+}
+
+/* -- 用户卡片 -- */
+.user-info-card.user-playing-game{
+    border: none; /* 清除用户正在玩游戏时的边框 */
+}
+
+.user-info-card .card-head .user-avator{
+    border: none; /* 清除用户头像的边框 */
+}
+
+.user-info-card{
+    backdrop-filter: blur(1rem); /* 给用户卡片添加背景模糊 */
+    background: var(--background-primary) !important; /* 设置用户卡片背景颜色 */
+}
+
+.role-list-wrapper{ /* 用户卡片添加角色列表的背景模糊 */
+    backdrop-filter: blur(1rem);
+}
+
+.card-head{
+    background-image: none !important; /* 清除用户头像的边框 (有状态时) */
+}
+
+/* -- 小红点 -- */
+.text-channel-unread-icon{ /* 重设文字频道小红点大小 */
+    height: 8px !important;
+    width: 8px !important;
+}
+
+.guild-unread-icon{ /* 重设服务器小红点大小 */
+    height: 12px !important;
+    width: 12px !important;
+}
+
+/* -- 推荐服务器 -- */
+.card-mask{ /* 清除 "查看服务器" */
+    opacity: 0;
+}
+
+.guide-page .grid-item:hover .guild-card-item{ /* 让卡片上移的更明显 */
+    margin-top: -15px !important;
+}
+
+.guide-page .grid-item .guild-card-item{ /* 添加卡片上移动画 */
+    transition-property: margin;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    backdrop-filter: blur(1rem);
+}
+
+/* -- Emoji 面板 -- */
+.emoji-panel{
+    backdrop-filter: blur(1rem); /* 添加面板背景模糊 */
+}
+
+/* -- 卡片消息 -- */
+.kui-card{
+    background: var(--background-primary) !important; /* 重设卡片信息背景颜色 */
+    backdrop-filter: blur(1rem); /* 添加背景模糊, 然鹅不知道为什么不能用 */
+}
+
+/* -- 置顶消息 -- */
+.message-item{ /* 重设置顶消息背景 */
+    background-color: var(--background-primary) !important;
+    backdrop-filter: blur(1rem) !important;
+}
+
+.theme-stick-message-box-bg{
+    background-color: var(--background-primary) !important;
+    backdrop-filter: blur(1rem) !important;
+}
+
+/* -- 消息 -- */
+.message-context-menu{ /* 消息上下文菜单列表 e.g 举报 */
+    backdrop-filter: blur(1rem) !important;
+}
+
+/* 设置界面 */
+.setting-mask{ /* 设置界面的背景模糊 */
+    backdrop-filter: blur(0.3rem) !important;
+}
+
+/* -- 提示气泡 ToolTop -- */
+.__react_component_tooltip.type-info{ /* 重设提示框背景颜色，添加模糊 */
+    background: var(--background-primary) !important;
+    backdrop-filter: blur(1rem);
+}
+
+.__react_component_tooltip.type-info.place-top:after{ /* 为提示框下面的倒三角 ▼ 改变背景颜色，添加模糊 */
+    border-top-color: var(--background-primary) !important;
+    backdrop-filter: blur(1rem);
+}
+
+/* -- 通用 -- */
+.theme-textarea{ /* 重设文本域背景 */
+    background-color: var(--background-primary) !important;
+}
+
+.top-menu{ /* 菜单背景模糊 */
+    backdrop-filter: blur(1rem) !important;
+}
+
+.user-setting-menu{
+    backdrop-filter: blur(1rem);
+}
