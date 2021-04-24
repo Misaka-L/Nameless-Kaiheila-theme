@@ -18,7 +18,7 @@
 ## 自定义
 ### 自定义背景图片
 1. 打开目录  `%appdata%\..\Local\KaiHeiLa\resources\app\webapp\build`，并使用文本编辑器打开 `Nameless.css`。
-> 使用本地图片记得把图片文件放入 `%appdata%\..\Local\KaiHeiLa\resources\app\webapp\build` 并将 `background-url` 的值修改为 `url("app/图片文件名称")`
+> 使用本地图片记得把图片文件放入 `%appdata%\..\Local\KaiHeiLa\resources\app\webapp\build` 并将 `background-url` 的值修改为 `url("/app/图片文件名称")`
 2. 找到 `background-url` 变量并将其值修改为 `url("图片地址")`
 ##### 例子:
 ```css
