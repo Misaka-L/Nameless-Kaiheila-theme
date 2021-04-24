@@ -173,3 +173,7 @@ body{
 .user-setting-menu{
     backdrop-filter: blur(1rem);
 }
+
+.header-right{
+    background: transparent; /* 去除频道右上角按钮诡异的黑色方块 */
+}
