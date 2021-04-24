@@ -15,6 +15,22 @@
 5. 重新启动开黑啦客户端。
 6. 搞定
 
+## 自定义
+### 自定义背景图片
+1. 打开目录  `%appdata%\..\Local\KaiHeiLa\resources\app\webapp\build`，并使用文本编辑器打开 `Nameless.css`。
+> 使用本地图片记得把图片文件放入 `%appdata%\..\Local\KaiHeiLa\resources\app\webapp\build` 并将 `background-url` 的值修改为 `url("app/图片文件名称")`
+2. 找到 `background-url` 变量并将其值修改为 `url("图片地址")`
+##### 例子:
+```css
+/* -- 无名氏 Nameless kaiheila theme By Misaka-L -- */
+/* Github: https://github.com/Misaka-L/Nameless-Kaiheila-theme */
+
+/* -- 主题相关 -- */
+*{
+    --background-url: url("https://bing.ioliu.cn/v1/rand");
+}
+```
+
 ## 版权信息
     背景图片来自 Pixiv: https://www.pixiv.net/artworks/89358421
     插画: 星空をキャンバスに変えて 作者: ドトノ
