@@ -161,7 +161,7 @@ body{
     backdrop-filter: blur(0.3rem) !important;
 }
 
-/* -- 提示气泡 ToolTop -- */
+/* -- 提示气泡 ToolTip -- */
 .__react_component_tooltip.type-info{ /* 重设提示框背景颜色，添加模糊 */
     background: var(--background-primary) !important;
     backdrop-filter: blur(1rem);
@@ -214,7 +214,7 @@ body{
 }
 
 .top-menu{ /* 菜单背景模糊 */
-    backdrop-filter: blur(8rem) !important;
+    backdrop-filter: blur(10px) !important;
 }
 
 .user-setting-menu{
@@ -248,4 +248,45 @@ body{
 .left-timer{
     background: transparent !important; /* 清除诡异的背景 */
     top: -12px !important; /* 移动到分割线上面 */
+}
+
+/* 语音输入模式选择 */
+.audio-mode-change-box{
+    backdrop-filter: blur(1rem);
+}
+
+/* 设置更改确认 */
+.setting-model-right-role{
+    backdrop-filter: blur(1rem);
+}
+
+.message-search-type-panel{
+    backdrop-filter: blur(1rem);
+}
+
+.viewer-tool-bar{
+    backdrop-filter: blur(1rem);
+    background-color: var(--background-primary) !important;
+}
+
+.viewer-tool-submenu{
+    background-color: var(--background-primary);
+    backdrop-filter: blur(1rem);
+}
+
+.message-context-menu-button{
+    backdrop-filter: blur(1rem);
+}
+
+.invite-message-box{
+    backdrop-filter: blur(1rem);
+}
+
+.room-layout-inner{
+    backdrop-filter: blur(1rem);
+    border-radius: 6px;
+}
+
+.user-search-box{
+    backdrop-filter: blur(1rem);
 }
