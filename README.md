@@ -1,5 +1,4 @@
 # Nameless 无名氏开黑啦第三方主题
-> English version here -> https://github.com/Misaka-L/Nameless-Kaiheila-theme/README_EN.md
 
 > ## *该为第三方产物，可能会因客户端更新等导致无法使用!*
  
